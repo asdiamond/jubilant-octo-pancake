@@ -1,0 +1,34 @@
+name: JubilantOctoPancake
+
+options:
+  bundleIdPrefix: com.aleksandr
+  deploymentTarget:
+    macOS: "15.0"
+  xcodeVersion: "26.2"
+
+settings:
+  base:
+    SWIFT_VERSION: 6.2
+    MACOSX_DEPLOYMENT_TARGET: "15.0"
+
+targets:
+  JubilantOctoPancake:
+    type: application
+    platform: macOS
+    sources:
+      - path: Sources/JubilantOctoPancake
+    resources:
+      - path: Resources/JubilantOctoPancake
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.aleksandr.JubilantOctoPancake
+        PRODUCT_NAME: JubilantOctoPancake
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_CFBundleDisplayName: Jubilant Octo Pancake
+        INFOPLIST_KEY_LSApplicationCategoryType: public.app-category.developer-tools
+        INFOPLIST_KEY_NSHumanReadableCopyright: ""
+        MARKETING_VERSION: 0.1.0
+        CURRENT_PROJECT_VERSION: 1
+        CODE_SIGN_STYLE: Automatic
+        CODE_SIGN_IDENTITY: "-"
+        ENABLE_PREVIEWS: YES

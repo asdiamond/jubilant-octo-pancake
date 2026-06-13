@@ -1,0 +1,388 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		14F58FBF313362F8E864FD2A /* ConnectionSidebar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0575654D08339D5C152C447C /* ConnectionSidebar.swift */; };
+		270362F777FC99E085ABD595 /* DatabaseBrowserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CC47BFEC8A454AD5F6E0352 /* DatabaseBrowserView.swift */; };
+		552A34FDACCA0823987763A8 /* ResultsPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EA4045E040C68B65F2954D /* ResultsPreviewView.swift */; };
+		57F3CC1ACFE491CDD548EFD6 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0D8EBC3E10AD231377D63C /* SettingsView.swift */; };
+		58800374F62F2C7BC926C54D /* JubilantOctoPancakeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E358454884647E03A4929AF3 /* JubilantOctoPancakeApp.swift */; };
+		5ECB199EDF306AADB89F601C /* QueryEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505B08E7FF6DB1BD02332A78 /* QueryEditorView.swift */; };
+		74A3F4CFE141AD82EC518F6F /* QueryWorkspaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B31D8D8F20F3FA5DBE04EE /* QueryWorkspaceView.swift */; };
+		9A9CEF0692C1A17E0892081D /* DatabaseObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A59CAE62D872E1B4D80BEC /* DatabaseObject.swift */; };
+		EB8EF1FE993F86E50FFB41EA /* DatabaseConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622F7409F4FE0A0FC1949E62 /* DatabaseConnection.swift */; };
+		F2C4E6DCB2E7BC510D2B0973 /* QueryDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D62E24FBC67BA0245668D15 /* QueryDocument.swift */; };
+		FCEB0D6BAE901AB05CE14C76 /* WorkbenchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B01FEDE321744448201641 /* WorkbenchView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0575654D08339D5C152C447C /* ConnectionSidebar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionSidebar.swift; sourceTree = "<group>"; };
+		10A59CAE62D872E1B4D80BEC /* DatabaseObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseObject.swift; sourceTree = "<group>"; };
+		22EA4045E040C68B65F2954D /* ResultsPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsPreviewView.swift; sourceTree = "<group>"; };
+		4C856B0EFAC9FE1814B25D37 /* JubilantOctoPancake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JubilantOctoPancake.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		505B08E7FF6DB1BD02332A78 /* QueryEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryEditorView.swift; sourceTree = "<group>"; };
+		5F0D8EBC3E10AD231377D63C /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		622F7409F4FE0A0FC1949E62 /* DatabaseConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseConnection.swift; sourceTree = "<group>"; };
+		6CC47BFEC8A454AD5F6E0352 /* DatabaseBrowserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseBrowserView.swift; sourceTree = "<group>"; };
+		7D62E24FBC67BA0245668D15 /* QueryDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryDocument.swift; sourceTree = "<group>"; };
+		97B01FEDE321744448201641 /* WorkbenchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkbenchView.swift; sourceTree = "<group>"; };
+		D6B31D8D8F20F3FA5DBE04EE /* QueryWorkspaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryWorkspaceView.swift; sourceTree = "<group>"; };
+		E358454884647E03A4929AF3 /* JubilantOctoPancakeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JubilantOctoPancakeApp.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		135CB1B2C2A34FE3052FB279 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				E358454884647E03A4929AF3 /* JubilantOctoPancakeApp.swift */,
+				5F0D8EBC3E10AD231377D63C /* SettingsView.swift */,
+				97B01FEDE321744448201641 /* WorkbenchView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		1F40CE88DFD592D958669001 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				2C09093F8E7D670B4F527EEA /* Connections */,
+				BD28F6761957DA200F3763FA /* DatabaseBrowser */,
+				90F11D0BA3B796AECF213366 /* QueryEditor */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		2C09093F8E7D670B4F527EEA /* Connections */ = {
+			isa = PBXGroup;
+			children = (
+				0575654D08339D5C152C447C /* ConnectionSidebar.swift */,
+			);
+			path = Connections;
+			sourceTree = "<group>";
+		};
+		2E96B878BB9B649FE6634D5E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				622F7409F4FE0A0FC1949E62 /* DatabaseConnection.swift */,
+				10A59CAE62D872E1B4D80BEC /* DatabaseObject.swift */,
+				7D62E24FBC67BA0245668D15 /* QueryDocument.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4002FB944B5AF83F4E0B26F2 /* JubilantOctoPancake */ = {
+			isa = PBXGroup;
+			children = (
+				135CB1B2C2A34FE3052FB279 /* App */,
+				1F40CE88DFD592D958669001 /* Features */,
+				2E96B878BB9B649FE6634D5E /* Models */,
+			);
+			name = JubilantOctoPancake;
+			path = Sources/JubilantOctoPancake;
+			sourceTree = "<group>";
+		};
+		6351779B34FA9730FA687139 = {
+			isa = PBXGroup;
+			children = (
+				4002FB944B5AF83F4E0B26F2 /* JubilantOctoPancake */,
+				EE4EF9D442C47B2C81B17B29 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		90F11D0BA3B796AECF213366 /* QueryEditor */ = {
+			isa = PBXGroup;
+			children = (
+				505B08E7FF6DB1BD02332A78 /* QueryEditorView.swift */,
+				D6B31D8D8F20F3FA5DBE04EE /* QueryWorkspaceView.swift */,
+				22EA4045E040C68B65F2954D /* ResultsPreviewView.swift */,
+			);
+			path = QueryEditor;
+			sourceTree = "<group>";
+		};
+		BD28F6761957DA200F3763FA /* DatabaseBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				6CC47BFEC8A454AD5F6E0352 /* DatabaseBrowserView.swift */,
+			);
+			path = DatabaseBrowser;
+			sourceTree = "<group>";
+		};
+		EE4EF9D442C47B2C81B17B29 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4C856B0EFAC9FE1814B25D37 /* JubilantOctoPancake.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		01BB93DAA8C4C9FFE7929864 /* JubilantOctoPancake */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8717DBE2EDD4DC3E230FA9B3 /* Build configuration list for PBXNativeTarget "JubilantOctoPancake" */;
+			buildPhases = (
+				42FB0C65301654D93E151F20 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JubilantOctoPancake;
+			packageProductDependencies = (
+			);
+			productName = JubilantOctoPancake;
+			productReference = 4C856B0EFAC9FE1814B25D37 /* JubilantOctoPancake.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1374BD9E4671D92CC0A1902C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 2620;
+				TargetAttributes = {
+					01BB93DAA8C4C9FFE7929864 = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = E191CCC81C9513D5C5395FF5 /* Build configuration list for PBXProject "JubilantOctoPancake" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 6351779B34FA9730FA687139;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = EE4EF9D442C47B2C81B17B29 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				01BB93DAA8C4C9FFE7929864 /* JubilantOctoPancake */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		42FB0C65301654D93E151F20 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14F58FBF313362F8E864FD2A /* ConnectionSidebar.swift in Sources */,
+				270362F777FC99E085ABD595 /* DatabaseBrowserView.swift in Sources */,
+				EB8EF1FE993F86E50FFB41EA /* DatabaseConnection.swift in Sources */,
+				9A9CEF0692C1A17E0892081D /* DatabaseObject.swift in Sources */,
+				58800374F62F2C7BC926C54D /* JubilantOctoPancakeApp.swift in Sources */,
+				F2C4E6DCB2E7BC510D2B0973 /* QueryDocument.swift in Sources */,
+				5ECB199EDF306AADB89F601C /* QueryEditorView.swift in Sources */,
+				74A3F4CFE141AD82EC518F6F /* QueryWorkspaceView.swift in Sources */,
+				552A34FDACCA0823987763A8 /* ResultsPreviewView.swift in Sources */,
+				57F3CC1ACFE491CDD548EFD6 /* SettingsView.swift in Sources */,
+				FCEB0D6BAE901AB05CE14C76 /* WorkbenchView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		82255C3819EC7A3063F91409 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Jubilant Octo Pancake";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aleksandr.JubilantOctoPancake;
+				PRODUCT_NAME = JubilantOctoPancake;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		A6651C77FFC9626367A5C48F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.2;
+			};
+			name = Debug;
+		};
+		B5E5FDF9583B7BA29514D82C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Jubilant Octo Pancake";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aleksandr.JubilantOctoPancake;
+				PRODUCT_NAME = JubilantOctoPancake;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		BA8F296612E7A245AAB5B09E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8717DBE2EDD4DC3E230FA9B3 /* Build configuration list for PBXNativeTarget "JubilantOctoPancake" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5E5FDF9583B7BA29514D82C /* Debug */,
+				82255C3819EC7A3063F91409 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E191CCC81C9513D5C5395FF5 /* Build configuration list for PBXProject "JubilantOctoPancake" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6651C77FFC9626367A5C48F /* Debug */,
+				BA8F296612E7A245AAB5B09E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1374BD9E4671D92CC0A1902C /* Project object */;
+}
