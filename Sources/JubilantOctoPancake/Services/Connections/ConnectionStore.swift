@@ -43,6 +43,10 @@ final class ConnectionStore: ObservableObject {
         try saveConnections()
     }
 
+    func password(for connection: DatabaseConnection) throws -> String? {
+        try credentialStore.password(for: connection.id)
+    }
+
     private func loadConnections(fileManager: FileManager) {
         guard let data = try? Data(contentsOf: fileURL) else {
             connections = []

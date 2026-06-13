@@ -1,5 +1,10 @@
 name: JubilantOctoPancake
 
+packages:
+  PostgresNIO:
+    url: https://github.com/vapor/postgres-nio.git
+    from: 1.33.0
+
 options:
   bundleIdPrefix: com.aleksandr
   deploymentTarget:
@@ -21,6 +26,8 @@ targets:
       - path: Resources/JubilantOctoPancake
     dependencies:
       - sdk: Security.framework
+      - package: PostgresNIO
+        product: PostgresNIO
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.aleksandr.JubilantOctoPancake

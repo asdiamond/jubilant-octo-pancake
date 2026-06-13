@@ -2,6 +2,7 @@ import SwiftUI
 
 struct WorkbenchView: View {
     @StateObject private var connectionStore = ConnectionStore()
+    private let postgresDriver = PostgresDriverService()
     @State private var selectedConnectionID: DatabaseConnection.ID?
     @State private var selectedObjectID: DatabaseObject.ID?
     @State private var selectedQueryID: QueryDocument.ID?
@@ -15,6 +16,19 @@ struct WorkbenchView: View {
                 selectedConnectionID: $selectedConnectionID
             ) { draft in
                 try connectionStore.addPostgresConnection(draft)
+            } onLoadDatabases: { connection in
+                let password = try connectionStore.password(for: connection)
+                return try await postgresDriver.listDatabases(
+                    for: connection,
+                    password: password
+                )
+            } onLoadObjects: { connection, database in
+                let password = try connectionStore.password(for: connection)
+                return try await postgresDriver.listObjects(
+                    for: connection,
+                    database: database.name,
+                    password: password
+                )
             }
         } content: {
             DatabaseBrowserView(

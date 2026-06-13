@@ -49,3 +49,7 @@ PostgreSQL connection metadata is saved to:
 ```
 
 Passwords are stored separately in macOS Keychain using `Security.framework`; they are keyed by the connection UUID and are not written to the JSON file.
+
+## PostgreSQL Driver
+
+The app uses `PostgresNIO` as its native Swift PostgreSQL client. It is added through Swift Package Manager in `project.yml` and resolved into the generated Xcode project by XcodeGen.
