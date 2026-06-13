@@ -19,6 +19,8 @@ targets:
       - path: Sources/JubilantOctoPancake
     resources:
       - path: Resources/JubilantOctoPancake
+    dependencies:
+      - sdk: Security.framework
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.aleksandr.JubilantOctoPancake

@@ -39,3 +39,13 @@ The initial scaffold is shaped like a database IDE:
 - settings for query editor behavior
 
 The next real implementation layer should add database driver services, secure credential storage in Keychain, persisted connections, and a real SQL editor component.
+
+## Connection Storage
+
+PostgreSQL connection metadata is saved to:
+
+```text
+~/Library/Application Support/JubilantOctoPancake/connections.json
+```
+
+Passwords are stored separately in macOS Keychain using `Security.framework`; they are keyed by the connection UUID and are not written to the JSON file.

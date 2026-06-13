@@ -8,19 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		14F58FBF313362F8E864FD2A /* ConnectionSidebar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0575654D08339D5C152C447C /* ConnectionSidebar.swift */; };
+		169488F2D0093E8D74474D4F /* KeychainCredentialStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4443A0B0255C5152D829C4 /* KeychainCredentialStore.swift */; };
 		270362F777FC99E085ABD595 /* DatabaseBrowserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CC47BFEC8A454AD5F6E0352 /* DatabaseBrowserView.swift */; };
 		552A34FDACCA0823987763A8 /* ResultsPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EA4045E040C68B65F2954D /* ResultsPreviewView.swift */; };
 		57F3CC1ACFE491CDD548EFD6 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0D8EBC3E10AD231377D63C /* SettingsView.swift */; };
 		58800374F62F2C7BC926C54D /* JubilantOctoPancakeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E358454884647E03A4929AF3 /* JubilantOctoPancakeApp.swift */; };
 		5ECB199EDF306AADB89F601C /* QueryEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505B08E7FF6DB1BD02332A78 /* QueryEditorView.swift */; };
 		74A3F4CFE141AD82EC518F6F /* QueryWorkspaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B31D8D8F20F3FA5DBE04EE /* QueryWorkspaceView.swift */; };
+		8334995E7E74312FA133C9E8 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01E23FA4E95C1F21804EDAD0 /* Security.framework */; };
+		98EC0BA0BEF6B3BB1492CE03 /* AddPostgresConnectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83D4D40696DD3BB94077F71 /* AddPostgresConnectionView.swift */; };
 		9A9CEF0692C1A17E0892081D /* DatabaseObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A59CAE62D872E1B4D80BEC /* DatabaseObject.swift */; };
+		A09B1881CBE65C1B0312916B /* ConnectionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B8C9929DD3ABED20060C3E /* ConnectionStore.swift */; };
+		E56270A69C42EC501304B757 /* PostgresConnectionDraft.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB828C961D999CCA4E0D92A /* PostgresConnectionDraft.swift */; };
 		EB8EF1FE993F86E50FFB41EA /* DatabaseConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622F7409F4FE0A0FC1949E62 /* DatabaseConnection.swift */; };
 		F2C4E6DCB2E7BC510D2B0973 /* QueryDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D62E24FBC67BA0245668D15 /* QueryDocument.swift */; };
 		FCEB0D6BAE901AB05CE14C76 /* WorkbenchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B01FEDE321744448201641 /* WorkbenchView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		01E23FA4E95C1F21804EDAD0 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		0575654D08339D5C152C447C /* ConnectionSidebar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionSidebar.swift; sourceTree = "<group>"; };
 		10A59CAE62D872E1B4D80BEC /* DatabaseObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseObject.swift; sourceTree = "<group>"; };
 		22EA4045E040C68B65F2954D /* ResultsPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsPreviewView.swift; sourceTree = "<group>"; };
@@ -29,11 +35,26 @@
 		5F0D8EBC3E10AD231377D63C /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		622F7409F4FE0A0FC1949E62 /* DatabaseConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseConnection.swift; sourceTree = "<group>"; };
 		6CC47BFEC8A454AD5F6E0352 /* DatabaseBrowserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseBrowserView.swift; sourceTree = "<group>"; };
+		6FB828C961D999CCA4E0D92A /* PostgresConnectionDraft.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostgresConnectionDraft.swift; sourceTree = "<group>"; };
 		7D62E24FBC67BA0245668D15 /* QueryDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryDocument.swift; sourceTree = "<group>"; };
 		97B01FEDE321744448201641 /* WorkbenchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkbenchView.swift; sourceTree = "<group>"; };
+		A9B8C9929DD3ABED20060C3E /* ConnectionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionStore.swift; sourceTree = "<group>"; };
+		CC4443A0B0255C5152D829C4 /* KeychainCredentialStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainCredentialStore.swift; sourceTree = "<group>"; };
 		D6B31D8D8F20F3FA5DBE04EE /* QueryWorkspaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryWorkspaceView.swift; sourceTree = "<group>"; };
 		E358454884647E03A4929AF3 /* JubilantOctoPancakeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JubilantOctoPancakeApp.swift; sourceTree = "<group>"; };
+		E83D4D40696DD3BB94077F71 /* AddPostgresConnectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPostgresConnectionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D68F1F2F7898CC9327143B10 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8334995E7E74312FA133C9E8 /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		135CB1B2C2A34FE3052FB279 /* App */ = {
@@ -59,7 +80,9 @@
 		2C09093F8E7D670B4F527EEA /* Connections */ = {
 			isa = PBXGroup;
 			children = (
+				E83D4D40696DD3BB94077F71 /* AddPostgresConnectionView.swift */,
 				0575654D08339D5C152C447C /* ConnectionSidebar.swift */,
+				6FB828C961D999CCA4E0D92A /* PostgresConnectionDraft.swift */,
 			);
 			path = Connections;
 			sourceTree = "<group>";
@@ -80,17 +103,36 @@
 				135CB1B2C2A34FE3052FB279 /* App */,
 				1F40CE88DFD592D958669001 /* Features */,
 				2E96B878BB9B649FE6634D5E /* Models */,
+				5AD3257A7E1D540E4CCFD9B3 /* Services */,
 			);
 			name = JubilantOctoPancake;
 			path = Sources/JubilantOctoPancake;
+			sourceTree = "<group>";
+		};
+		5AD3257A7E1D540E4CCFD9B3 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				6871CAFFDE765BE6D1DE3ADF /* Connections */,
+				F02968B92BEE05509BC3CC01 /* Security */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		6351779B34FA9730FA687139 = {
 			isa = PBXGroup;
 			children = (
 				4002FB944B5AF83F4E0B26F2 /* JubilantOctoPancake */,
+				F029087D208C79B7552AF93D /* Frameworks */,
 				EE4EF9D442C47B2C81B17B29 /* Products */,
 			);
+			sourceTree = "<group>";
+		};
+		6871CAFFDE765BE6D1DE3ADF /* Connections */ = {
+			isa = PBXGroup;
+			children = (
+				A9B8C9929DD3ABED20060C3E /* ConnectionStore.swift */,
+			);
+			path = Connections;
 			sourceTree = "<group>";
 		};
 		90F11D0BA3B796AECF213366 /* QueryEditor */ = {
@@ -119,6 +161,22 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		F029087D208C79B7552AF93D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				01E23FA4E95C1F21804EDAD0 /* Security.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F02968B92BEE05509BC3CC01 /* Security */ = {
+			isa = PBXGroup;
+			children = (
+				CC4443A0B0255C5152D829C4 /* KeychainCredentialStore.swift */,
+			);
+			path = Security;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -127,6 +185,7 @@
 			buildConfigurationList = 8717DBE2EDD4DC3E230FA9B3 /* Build configuration list for PBXNativeTarget "JubilantOctoPancake" */;
 			buildPhases = (
 				42FB0C65301654D93E151F20 /* Sources */,
+				D68F1F2F7898CC9327143B10 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -177,11 +236,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98EC0BA0BEF6B3BB1492CE03 /* AddPostgresConnectionView.swift in Sources */,
 				14F58FBF313362F8E864FD2A /* ConnectionSidebar.swift in Sources */,
+				A09B1881CBE65C1B0312916B /* ConnectionStore.swift in Sources */,
 				270362F777FC99E085ABD595 /* DatabaseBrowserView.swift in Sources */,
 				EB8EF1FE993F86E50FFB41EA /* DatabaseConnection.swift in Sources */,
 				9A9CEF0692C1A17E0892081D /* DatabaseObject.swift in Sources */,
 				58800374F62F2C7BC926C54D /* JubilantOctoPancakeApp.swift in Sources */,
+				169488F2D0093E8D74474D4F /* KeychainCredentialStore.swift in Sources */,
+				E56270A69C42EC501304B757 /* PostgresConnectionDraft.swift in Sources */,
 				F2C4E6DCB2E7BC510D2B0973 /* QueryDocument.swift in Sources */,
 				5ECB199EDF306AADB89F601C /* QueryEditorView.swift in Sources */,
 				74A3F4CFE141AD82EC518F6F /* QueryWorkspaceView.swift in Sources */,
